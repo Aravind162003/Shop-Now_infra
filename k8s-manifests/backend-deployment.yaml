@@ -17,7 +17,7 @@ spec:
       - name: backend-api
         image: aravind80555/shop-backend:v5
         ports:
-        - containerPort: 5000
+        - containerPort: 3000
         env:
         - name: MONGO_URI
           valueFrom:
