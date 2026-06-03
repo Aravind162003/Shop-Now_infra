@@ -16,6 +16,6 @@ spec:
       containers:
       - name: frontend-app
         # Jenkins will automatically overwrite 'latest' with 'v1', 'v2', etc.
-        image: aravind80555/shop-frontend:v6
+        image: aravind80555/shop-frontend:v7
         ports:
         - containerPort: 3000
