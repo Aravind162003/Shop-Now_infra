@@ -18,3 +18,9 @@ spec:
         image: aravind80555/shop-backend:v4
         ports:
         - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          valueFrom:
+            secretKeyRef:
+              name: mern-db-secret  # The exact name of the secret we just created in GCP
+              key: MONGO_URI
