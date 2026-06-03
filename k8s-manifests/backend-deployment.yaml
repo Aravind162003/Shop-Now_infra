@@ -24,3 +24,8 @@ spec:
             secretKeyRef:
               name: mern-db-secret  # The exact name of the secret we just created in GCP
               key: MONGO_URI
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: mern-backend-secrets
+              key: JWT_SECRET
