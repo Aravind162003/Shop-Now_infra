@@ -27,5 +27,5 @@ spec:
         - name: JWT_SECRET
           valueFrom:
             secretKeyRef:
-              name: mern-backend-secrets
+              name: jwt-secret-vault
               key: JWT_SECRET
