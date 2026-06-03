@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: aravind80555/shop-backend:latest
+        image: aravind80555/shop-backend:v4
         ports:
         - containerPort: 5000
